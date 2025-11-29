@@ -1,57 +1,19 @@
 body {
     background: #dfe6e9;
-    font-size: 16px;
-    font-weight: bold;
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
 }
 
-/* 共通スタイル */
-.timer, .stopwatch {
-    width: 450px;
-    padding: 25px;
-    background: #ecf0f1;
-    border: 3px solid #fff;
-    border-radius: 14px;
-    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
-    flex-direction: column;
-    gap: 18px;
-}
-
-.stopwatch {
-    display: none;
-}
-
-
-/* ディスプレイ部分 */
+/* 表示部分のみ縁と背景維持 */
 .display, .timeW {
-    font-size: 42px;
-    background: #fff;
-    border-radius: 10px;
-    text-align: center;
-    padding: 18px 0;
-    border: 2px solid #ccc;
-    margin-bottom: 12px;
+    background:#fff;
+    border:2px solid #ccc;
 }
 
-/* ボタンレイアウト */
-.timer button, .stopwatch button {
-    padding: 8px;
-    margin: 6px;
-    font-size: 15px;
+.btn {
+    margin-right: 4px;
 }
 
-/* タイマーの時間調整ボタンを横並び */
-.timer .oneSecond, 
-.timer .tenSecond,
-.timer .oneMinute,
-.timer .tenMinute,
-.timer .oneHour,
-.timer .tenHour,
-.timer .resetT {
-    display: inline-block;
-    width: 100px;
+.startW, .stopW {
+    margin-right: 8px;
 }
+

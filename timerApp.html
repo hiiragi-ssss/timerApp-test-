@@ -10,31 +10,45 @@
 </head>
 <body>
 
-    <main >
-        <section class="timer">
-            <button class="switchBtn btn btn-outline-secondary ">ストップウォッチへ切り替え</button>
-            <div class="display">
-                <div class="timeT">000:00:00</div>
-                <button class="startT btn btn-outline-primary">スタート</button>
-                <button class="stopT btn btn-outline-danger">ストップ</button>
-            </div>
+<main class="container my-5">
+
+    <!-- ▼ タイマー -->
+    <section class="timer card p-4 text-center mx-auto" style="max-width:450px;">
+        <button class="switchBtn btn btn-outline-secondary w-75 mx-auto mb-3">ストップウォッチへ切り替え</button>
+
+        <div class="display h2 py-3 border rounded bg-white mb-4 timeT">000:00:00</div>
+
+        <div class="d-flex flex-wrap justify-content-center gap-2 mb-3">
             <button class="oneSecond btn btn-outline-secondary">1秒</button>
-            <button class="tenSecond btn btn-outline-secondary">10秒</button>
+            <button class="tenSecond  btn btn-outline-secondary">10秒</button>
             <button class="oneMinute btn btn-outline-secondary">1分</button>
             <button class="tenMinute btn btn-outline-secondary">10分</button>
             <button class="oneHour btn btn-outline-secondary">1時間</button>
             <button class="tenHour btn btn-outline-secondary">10時間</button>
-            <button class="resetT btn btn-outline-secondary">リセット</button>
-        </section>
+        </div>
 
-        <section class="stopwatch">
-            <button class="switchBtn btn btn-outline-secondary">タイマーへ切り替え</button>
-            <div class="timeW">時間表示</div>
-            <button class="resetW btn btn-outline-secondary">リセット</button>
-            <button class="startW btn btn-outline-primary">スタート</button>
-            <button class="stopW btn btn-outline-danger">ストップ</button>
-        </section>
-    </main>
+        <button class="startT btn btn-primary w-100 mb-2">スタート</button>
+        <button class="stopT btn btn-danger w-100 mb-2">ストップ</button>
+        <button class="resetT btn btn-secondary w-50 mx-auto d-block">リセット</button>
+    </section>
+
+    <!-- ▼ ストップウォッチ -->
+    <section class="stopwatch card p-4 text-center mx-auto mt-4" style="max-width:450px; display: none;">
+        <button class="switchBtn btn btn-outline-secondary w-75 mx-auto mb-3">タイマーへ切り替え</button>
+
+        <div class="timeW h2 py-3 border rounded bg-white mb-4">000:00:00</div>
+
+        <!-- 2列→Bootstrapで整列 -->
+        <div class="d-flex justify-content-center gap-2 mb-3 flex-wrap">
+            <button class="startW btn btn-primary">スタート</button>
+            <button class="stopW btn btn-danger">ストップ</button>
+            <button class="resetW btn btn-secondary">リセット</button>
+        </div>
+    </section>
+
+</main>
+
+
 
     <script src="timerApp.js"></script>
 </body>
